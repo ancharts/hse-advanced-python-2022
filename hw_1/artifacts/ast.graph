@@ -1,0 +1,77 @@
+graph {
+	0 [label=Module fillcolor="#f39c12" shape=square style=filled]
+	1 [label="Func fib" fillcolor="#D06224" shape=square style=filled]
+	2 [label=arguments fillcolor="#f39c12" shape=square style=filled]
+	3 [label="Arg = n" fillcolor="#8A8635" shape=round style=filled]
+	2 -- 3
+	1 -- 2
+	4 [label=If fillcolor="#f39c12" shape=square style=filled]
+	5 [label=BoolOp fillcolor="#AE431E" shape=round style=filled]
+	6 [label=Or fillcolor="#AE431E" shape=circle style=filled]
+	5 -- 6
+	7 [label=Compare fillcolor="#f39c12" shape=square style=filled]
+	8 [label="Name = n" fillcolor="#8A8635" shape=round style=filled]
+	9 [label=Load fillcolor="#f39c12" shape=square style=filled]
+	8 -- 9
+	7 -- 8
+	10 [label="==" fillcolor="#AE431E" shape=circle style=filled]
+	7 -- 10
+	11 [label="Constant = 0" fillcolor="#8A8635" shape=round style=filled]
+	7 -- 11
+	5 -- 7
+	12 [label=Compare fillcolor="#f39c12" shape=square style=filled]
+	13 [label="Name = n" fillcolor="#8A8635" shape=round style=filled]
+	14 [label=Load fillcolor="#f39c12" shape=square style=filled]
+	13 -- 14
+	12 -- 13
+	15 [label="==" fillcolor="#AE431E" shape=circle style=filled]
+	12 -- 15
+	16 [label="Constant = 1" fillcolor="#8A8635" shape=round style=filled]
+	12 -- 16
+	5 -- 12
+	4 -- 5
+	17 [label=Return fillcolor="#f39c12" shape=square style=filled]
+	18 [label="Constant = 1" fillcolor="#8A8635" shape=round style=filled]
+	17 -- 18
+	4 -- 17
+	1 -- 4
+	19 [label=Return fillcolor="#f39c12" shape=square style=filled]
+	20 [label=BinOp fillcolor="#AE431E" shape=round style=filled]
+	21 [label=Call fillcolor="#f39c12" shape=square style=filled]
+	22 [label="Name = fib" fillcolor="#8A8635" shape=round style=filled]
+	23 [label=Load fillcolor="#f39c12" shape=square style=filled]
+	22 -- 23
+	21 -- 22
+	24 [label=BinOp fillcolor="#AE431E" shape=round style=filled]
+	25 [label="Name = n" fillcolor="#8A8635" shape=round style=filled]
+	26 [label=Load fillcolor="#f39c12" shape=square style=filled]
+	25 -- 26
+	24 -- 25
+	27 [label="-" fillcolor="#AE431E" shape=circle style=filled]
+	24 -- 27
+	28 [label="Constant = 1" fillcolor="#8A8635" shape=round style=filled]
+	24 -- 28
+	21 -- 24
+	20 -- 21
+	29 [label="+" fillcolor="#AE431E" shape=circle style=filled]
+	20 -- 29
+	30 [label=Call fillcolor="#f39c12" shape=square style=filled]
+	31 [label="Name = fib" fillcolor="#8A8635" shape=round style=filled]
+	32 [label=Load fillcolor="#f39c12" shape=square style=filled]
+	31 -- 32
+	30 -- 31
+	33 [label=BinOp fillcolor="#AE431E" shape=round style=filled]
+	34 [label="Name = n" fillcolor="#8A8635" shape=round style=filled]
+	35 [label=Load fillcolor="#f39c12" shape=square style=filled]
+	34 -- 35
+	33 -- 34
+	36 [label="-" fillcolor="#AE431E" shape=circle style=filled]
+	33 -- 36
+	37 [label="Constant = 2" fillcolor="#8A8635" shape=round style=filled]
+	33 -- 37
+	30 -- 33
+	20 -- 30
+	19 -- 20
+	1 -- 19
+	0 -- 1
+}
