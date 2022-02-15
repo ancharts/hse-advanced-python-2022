@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{graphicx}
+\begin{document}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		Name & Age & Height & Weight \\
+		\hline
+		Anna & 21 & 20 & 30 \\
+		\hline
+		Bob & 20 & 21 & 30 \\
+		\hline
+		Kate & 18 & 45 & 50 \\
+		\hline
+		Eva & 25 & 34 & 60 \\
+		\hline
+		Mike & 34 & 12 & 35 \\
+		\hline
+	\end{tabular}
+
+	\includegraphics[height=10cm]{ast.png}
+\end{document}
