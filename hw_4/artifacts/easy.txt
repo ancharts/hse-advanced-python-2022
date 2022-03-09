@@ -1,0 +1,3 @@
+Time sync: 45.5794s
+Time threads: 45.5739s
+Time processes: 13.4578s
